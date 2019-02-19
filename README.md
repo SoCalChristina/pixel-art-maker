@@ -1,4 +1,4 @@
-# pixel-art-maker
+# Pixel-Art-Maker
 ## A single-page web app that allows users to draw pixel art on a customizable canvas   
 
 ### Grow With Google Challenge Scholarship 
@@ -18,9 +18,7 @@ Users can:
 6. Click a button to reset the grid.
 
 
-![screen shot of app] (
-        pixel-art-maker/pixel-art-screenshot.png
-      )
+![screen shot of app] (https://github.com/SoCalChristina/pixel-art-maker/blob/master/pixel-art-screenshot.png?raw=true)
 
 ## Purpose:
 This is a Reactjs Neighborhood Map app built as the final project of the Udacity Frontend Developer Nano Degree.
