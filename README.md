@@ -40,6 +40,9 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.   
 
+### View webpage
+You may also see this app at  (https://socalchristina.github.io/pixel-art-maker/).
+
 ## Attributions
 ### This project utilizes the following:
 
