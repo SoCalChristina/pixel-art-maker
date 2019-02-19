@@ -18,7 +18,7 @@ Users can:
 6. Click a button to reset the grid.
 
 
-![screen shot of app](https://github.com/SoCalChristina/pixel-art-maker/blob/master/src/pixel-art-maker-screenshot.png "Pixel Art Maker")
+![screen shot of app] (pixel-art-maker/pixel-art-screenshot.png)
 
 ## Purpose:
 This is a Reactjs Neighborhood Map app built as the final project of the Udacity Frontend Developer Nano Degree.
