@@ -18,7 +18,9 @@ Users can:
 6. Click a button to reset the grid.
 
 
-![screen shot of app] (pixel-art-maker/pixel-art-screenshot.png)
+![screen shot of app] (
+        pixel-art-maker/pixel-art-screenshot.png
+      )
 
 ## Purpose:
 This is a Reactjs Neighborhood Map app built as the final project of the Udacity Frontend Developer Nano Degree.
@@ -49,5 +51,5 @@ You will also see any lint errors in the console.
 ## References
 All resources are cited here and/or in the code.
 * Udacity Start Code (https://github.com/udacity/project-pixel-art-maker-starter)   
-* Responsive TopNav (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
+* Responsive Topnav (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
 * Range Sliders (https://www.w3schools.com/howto/howto_js_rangeslider.asp)
