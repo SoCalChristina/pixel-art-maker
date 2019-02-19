@@ -1,0 +1,303 @@
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E1E8ED;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  margin: auto;
+}
+.topnav {
+  background-color: #66757F;/*#333;*/
+  overflow: hidden;
+  color: white;
+}
+
+/* Style the navigation bar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #157fd1;/*#4CAF50;*/
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+  color: white;
+}
+header {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  background-color: #157fd1;
+  margin: 0px;
+  border: solid .05 #66757F;
+  box-shadow: .4em .4em 2.5em rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-family: 'Press Start 2P';
+  text-shadow: 3px 3px black;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  margin: auto;
+  height: auto;
+}
+
+.formContainer {
+  width: 100vw;
+  padding: 1em;
+  background-color: #eff3f5;
+  border: solid 1px #66757F;
+  box-shadow: .4em .4em 2.5em rgba(0, 0, 0, 0.3);
+}
+
+.controlPanel {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+}
+
+ h3 {
+   padding-top: 1em;
+ }
+
+#sizePicker {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+max-width:100%;
+padding: 0em;
+justify-content: center;
+text-align: center;
+}
+
+.userRange {
+  padding: 0.5em;
+}
+
+#inputHeight {
+  width: 100%;
+  margin: auto;
+}
+
+#inputWidth {
+  width: 100%;
+  margin: auto;
+}
+
+#val1,
+#val2 {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: 0.25em;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #157fd1;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #157fd1;
+  cursor: pointer;
+}
+
+#colorControl{
+  width: 100vw
+}
+
+button {
+  background-color: #157fd1;
+  border: 1.5px solid #66757F;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  /*letter-spacing: 2px;*/
+  margin-top: 0.5em;
+  padding: 0.3em;
+  border-radius: 0.25em;
+}
+
+#clearColor:hover,
+#clearCanvas:hover {
+  background-color: #FD3DFB;
+}
+
+/*p {
+  letter-spacing: 0.1em;
+}*/
+
+/*p {
+  margin-top: 0.5em;
+}*/
+
+main {
+  dislplay: flex;
+  flex-flow: column;
+  width: 100vw;
+}
+
+#grid {
+  width: 100%;
+  height: auto;
+}
+
+#grid h3 {
+  padding: 0.5em;
+}
+
+#coverImage {
+  width: 70%;
+  margin: auto;
+}
+
+#coverImage img {
+  width: 100%;
+  margin: auto;
+  border: solid 1px #66757F;
+  box-shadow: .4em .4em 2.5em rgba(0, 0, 0, 0.3);
+}
+
+tr,
+td {
+  background-color: #fff;
+  border: 1px solid #dfe3ee;
+}
+
+table {
+  border: 2px solid #66757F;
+  border-collapse: collapse;
+  box-shadow: 1.6em 1.6em 2.5em rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input {
+  outline: none;
+}
+
+input[type="color"] {
+  background-color: #dfe3ee;
+  cursor: pointer;
+  padding: 2px;
+}
+
+input[type="range"]:first-of-type {
+  margin-right: 15px;
+}
+
+input[type="range"] {
+  width: 70%;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+}
+
+/**** Media Queries *****/
+@media only screen and (min-width: 650px) {
+
+  main {
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-right: 0em;
+  }
+
+  .formContainer {
+    width: 25%;
+    margin-left: 0em;
+    padding: 0.2em;
+  }
+
+  .formContainer p {
+    padding: 0.5em;
+  }
+
+  #sizePicker {
+    width: 100%;
+    padding: 0.5em 0em;
+    margin: auto;
+    flex-flow: column;
+  }
+
+  .userRange {
+    width: 100%;
+    line-height: 1.2em;
+  }
+
+  #inputHeight,
+  #inputWidth {
+    margin: 0.5em 0em;
+  }
+
+  #colorPanel {
+    padding: 0.5em;
+  }
+
+  #grid {
+    width: 75%;
+    padding: 0.5em;
+  }
+
+  #coverImage {
+    width: 80%;
+    margin: auto;
+  }
+}

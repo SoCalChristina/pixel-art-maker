@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Pixel Art Maker!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+<body>
+    <!--Navigation Bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#rubric">Rubric</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+<header>
+  <h1>Pixel Art Maker</h1>
+</header>
+
+<main>
+  <div class="formContainer">
+    <p>Drag Sliders to Create A Custom Canvas</p>
+      <form id="sizePicker">
+        <div class="userRange">
+          Adjust Height <span id="val1"></span>:
+          <input type="range" id="inputHeight" class="slider" name="height" min="10" max="50" value="10" step="5">
+        </div>
+        <div class="userRange">
+          Adjust Width <span id="val2"></span>:
+          <input type="range" id="inputWidth" class="slider" name="width" min="10" max="50" value="10" step="5">
+        </div>
+      </form>
+  <!--  <div>
+        <p id="p1">Value: <span id="val1"></span></p>
+        <p id="p2">Value: <span id="val2"></span></p>
+        </div>
+        </div>-->
+
+  <div id="colorPanel">
+    <h2>Pick A Color</h2>
+      <input type="color" id="colorPicker" value="#FD3DFB">
+      <div>
+        <button id="clearColor" type="button" name="button">Erase</button>
+<!--<button id="fillColor" type="button" name="button">Fill Canvas</button>-->
+        <button id="clearCanvas" type="button" name="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="grid">
+    <h3>Design Canvas</h3>
+    <!--  TODO add cover image visibility toggle -->
+    <div id="coverImage">
+        <img src="images/pixel-unicorn-medium.png" alt="Image of a pixelated unicorn" />
+      </div>
+      <table id="pixelCanvas"></table>
+  </div>
+</main>
+<footer>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/color-polyfill.js"></script>
+
+</body>
+</html>
