@@ -21,7 +21,7 @@ Users can:
 ![screen shot of app] (https://github.com/SoCalChristina/pixel-art-maker/blob/master/pixel-art-screenshot.png?raw=true)
 
 ## Purpose:
-This is a Reactjs Neighborhood Map app built as the final project of the Udacity Frontend Developer Nano Degree.
+This web app is built as project of the Udacity Front End Web Developer Nanodegree.
 
 
 ## Getting Started:
