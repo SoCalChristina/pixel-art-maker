@@ -79,16 +79,6 @@ fillColor.on("click", function() {
   td.css("background-color", color.val());
 });
 
-// Dynamic fillColor button
-//fillColor.css("background-color", "#4267B2").hover(
-//  function() {
-//    $(this).css("background-color", color.val());
-//  },
-//  function() {
-//    $(this).css("background-color", "#4267B2");
-//  }
-//);
-
 // Delete cell color
 table.on("dblclick", "td", function() {
   $(this).css("background-color", "");
