@@ -22,7 +22,7 @@ body {
 
 #flexContainer {
   background-color: #E1E8ED;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -148,7 +148,7 @@ header {
   margin: 0em;
   border: solid .05 #66757F;
   box-shadow: .4em .4em 2.5em rgba(0, 0, 0, 0.3);
-  height: auto;
+  height: 10vh;
 }
 
 h1 {
@@ -156,7 +156,7 @@ h1 {
   text-shadow: 3px 3px black;
   text-align: center;
   color: white;
-  width: 100%;
+  font-size: 100%;
   margin: auto;
   padding: 0.2em;
 }
@@ -166,21 +166,17 @@ h1 {
   flex-direction: column;
   width: 100vw;
   margin: auto;
-  height: auto;
+  height: calc(100% - 28vh);
 }
 
 #formContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-/*  height: 20vh;*/
-  /*align-items: stretch;*/
   background-color: #eff3f5;
   border: solid 1px #66757F;
   box-shadow: .4em .4em 2.5em rgba(0, 0, 0, 0.3);
-  margin: auto;
-  /*font-size: 1.2em;*/
+  align-content: stretch;
 }
 
 #rangeSliders {
@@ -191,13 +187,17 @@ h1 {
 }
 
 #rangeSliders p {
-  padding-top: 0.5em;
+  padding: 0.5em 0em;
+  font-size: 0.8em;
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 /* range slider form styles */
 #sizePicker {
   display: flex;
-  max-width:100%;
+  width:100%;
   margin: auto;
   padding: 0em;
   text-align: center;
@@ -206,37 +206,36 @@ h1 {
 
 
 .userRange {
-  padding: 0.5em;
+  padding-top: 0.2em;
   display: block;
-  width: 45%;
+  width: 42%;
   height: auto;
   margin: auto;
-}
-
-#inputHeight,
-#inputWidth {
-  display: flex;
-  width: 100%;
-  margin: .7em;
+  font-size: 0.8em;
 }
 
 #val1,
 #val2 {
   background-color: white;
   border: 1px solid black;
-  padding: 0.2em;
+  padding: 0.1em;
+  font-size: 0.8em;
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  /*display: flex;
+  flex-basis: 100%;*/
   height: 10px;
   border-radius: 5px;
-  background: #d3d3d3;
+  border: 1px solid #000;
+  background: #dfe3ee;
   outline: 0.25em;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  width: 100%;
+  margin: 0.3em;
 }
 
 .slider::-webkit-slider-thumb {
@@ -262,21 +261,12 @@ h1 {
   flex-direction: row;
   width: 100%;
   margin: auto;
-  align-content: stretch
+  padding-top: 0.5em;
 }
 
-#colorControls{
-  display: block;
-  margin: auto;
-  height: auto;
-}
-
-#colorControls h4{
-  display: block;
-  margin: auto;
-}
-
-#colorPicker {
+#colorPicker,
+#colorControls,
+#colorControls h4 {
   display: block;
   margin: auto;
 }
@@ -289,13 +279,11 @@ h1 {
   padding: 1em;
 }
 
-#clearColor {
-  margin-right: 1em;
+#clearColor,
+#clearCanvas {
+  margin: 0.5em;
 }
 
-#clearCanvas {
-  margin-left: 1em;
-}
 button {
   background-color: #55ACEE;
   border: 1.5px solid #66757F;
@@ -314,18 +302,20 @@ button {
   background-color: #FD3DFB;
 }
 
+#clearColor:focus,
+#clearCanvas:focus {
+  border: #00ffff;
+}
+
 #content {
   width: 100%;
-  height: auto;
   display: block;
   margin: auto;
+  padding-top: 0.5em;
 
 
 }
 
-/*#content h3 {
-  padding: 0.5em;
-}*/
 /* TODO add a cover image
 #coverImage {
   width: 70%;
@@ -346,11 +336,11 @@ td {
 }
 
 #pixelCanvas {
+  padding-top: 0.5em;
   border: 2px solid #66757F;
   border-collapse: collapse;
   box-shadow: 1.6em 1.6em 2.5em rgba(0, 0, 0, 0.3);
-  margin: 40px auto;
-  z-index: 500;
+  margin: auto;
 }
 
 #pixelCanvas tr {
@@ -361,54 +351,23 @@ td {
   width: 20px;
 }
 
-input {
-  outline: none;
-}
-
-input[type="color"] {
-  background-color: #dfe3ee;
-  cursor: pointer;
-  padding: 2px;
-}
-
-input[type="range"]:first-of-type {
-  margin-right: 15px;
-}
-
-input[type="range"] {
-  width: 70%;
-}
-
 footer {
- bottom: 0;
- padding: 1em;
- background-color: #66757F;
- text-align: center;
- display: flex;
- flex-flow: column;
+  padding: 0.5em;
+  background-color: #66757F;
+  flex-flow: column;
   width: 100vw;
   background-color: #66757F;
   color: white;
-  /*position: relative;*/
-  height:15vh;
-  /*flex-shrink: 0;*/
-/*  font-size: 0.5em;
-  justify-content: space-around;
-  color: white;*/
-}
-
-#footertext {
-  justify-content: center;
-  color: white;
+  height: 15vh;
+  font-size: 80%;
   margin: auto;
-  align-items:  center
 }
 
 #footerText p {
   text-align: center;
-  font-size: 0.5em;
-}
+  margin: auto;
 
+}
 #footerIcons ul, li{
   list-style: none;
   display: inline-block;
@@ -431,7 +390,6 @@ footer {
   flex-direction: row;
 }
 #formContainer {
-
   display: block;
   width: 25%;
   margin-left: 0;
@@ -439,32 +397,27 @@ footer {
   position: relative;
 }
 
-#content {
-  display: block;
-  width: 75%;
-  height: auto;
-  margin-right: 0;
-}
-#clearColor,
-#clearCanvas {
-  margin: auto;
-}
-/* min-width 650 *****/
-@media only screen and (min-width: 650px) {
-
-header h1 {
-  padding: 0.5em;
-}
-  main {
+  #mainContent {
     display: flex;
     flex-flow: row;
-
   }
-
   .formContainer {
     flex-basis: 24%;
     margin-left: 0em;
     padding: 0.2em;
+  }
+
+  #clearColor,
+  #clearCanvas {
+    margin: 0.5em;
+    padding: 0.2em;
+  }
+}
+/* min-width 650 *****/
+@media only screen and (min-width: 650px) {
+
+  header h1 {
+    padding: 0.5em;
   }
 
   .formContainer p {
@@ -492,26 +445,28 @@ header h1 {
     padding: 0.5em;
   }
 
-  #content {
-    width: 75%;
+  #canvasContent {
+    width: calc(100vw - 25%);
     padding: 0.5em;
   }
 
   footer {
-  /*  flex-shrink: 0;*/
+    display: flex;
     flex-direction: row;
-    overflow: hidden;
   }
-  #footerText {
-    width: 50%;
-  }
+
+  #footerText,
   #footerIcons {
-    width: 50%;
+    max-width: 45%;
+    margin: auto;
   }
+
+  #footerIcons ul, li {
+    margin: 0em auto;
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
   .aside, {
     flex-direction: column;
     }
-}
+}*/
