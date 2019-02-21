@@ -69,9 +69,13 @@
 <header>
   <h1>Pixel Art Maker</h1>
 </header>
-
-<main>
-  <div class="aside formContainer">
+<!-- End Header Section -->
+<main id="mainContent">
+  <!-- Begin Control Panel Section -->
+  <section id="formContainer" aria-label="User Customization Control Panel"
+  role="controlPanel">
+  <!-- Begin range slider control section -->
+    <div id=rangeSliders>
     <p>Drag Sliders to Create A Custom Canvas</p>
       <form id="sizePicker">
         <div class="userRange">
@@ -83,26 +87,32 @@
           <input type="range" id="inputWidth" class="slider" name="width" min="10" max="50" value="20" step="5">
         </div>
       </form>
-
+</div>
+<!-- Begin color selects -->
   <div id="colorPanel">
+    <div id="colorControls">
     <h4>Pick A Color</h4>
       <input type="color" id="colorPicker" value="#FD3DFB">
-      <div>
+<!-- End color selects -->
+
+<!-- Begin reset buttons section -->
+      <div id="resetButtons">
         <button id="clearColor" type="button" name="button">Erase</button>
         <button id="clearCanvas" type="button" name="button">Reset</button>
       </div>
     </div>
   </div>
-
+</section>
+<!-- Begin the Pixel Canvas area -->
   <div id="content">
-    <h3>Design Canvas</h3>
+<!--    <h3>Design Canvas</h3>-->
     <!--  TODO add cover image visibility toggle -->
   <!--  <div id="coverImage">
         <img src="images/pixel-unicorn-medium.png" alt="Image of a pixelated unicorn" />
       </div>-->
       <table id="pixelCanvas"></table>
   </div>
-
+<!-- End Pixel Canvas area -->
 
 </main>
 <footer>
@@ -120,12 +130,13 @@
   </ul>
 </div>
 </footer>
+</div>
 <!--</div>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/color-polyfill.js"></script>
-</div>
+
 </body>
 
 </html>
